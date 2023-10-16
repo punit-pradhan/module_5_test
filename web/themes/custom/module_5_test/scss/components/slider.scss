@@ -1,2 +1,175 @@
 @use "../partials/importers" as *;
 
+.views-row {
+    position: relative;
+    .views-field-field-carousel-image {
+        .field-content {
+            img {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+            }
+        }
+    }
+    .views-field-nothing {
+        .field-content {
+            &::before {
+                content: "";
+                background-image: url(/themes/custom/module_5_test/images/icc-world-cup-trophy-2023.png);
+                position: absolute;
+                top: 60px;
+                left: 5%;
+                width: 88px;
+                height: 170px;
+                bottom: 0;
+                background-repeat: no-repeat;
+                z-index: 9999999;
+                background-size: 70px;
+            }
+            .match {
+                position: absolute;
+                height: 100%;
+                z-index: 1;
+                top: 0;
+                background-color: rgba(0, 0, 0, 0.757);
+                width: 100%;
+                padding: 240px 5% 0 5%;
+                .goindia{
+                    display: none;
+                    width: max-content;
+                    padding: 0.5rem;
+                    background-color: $blue;
+                    top: 9rem;
+                    border-radius: 1rem;
+                    left: 3rem;
+                }
+                &__info {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                    &__title,
+                    &__teams {
+                        font-family: Montserrat-Bold;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: $white;
+
+                        a {
+                            text-decoration: none;
+                            color: $white;
+                        }
+                    }
+                    .collon {
+                        color: $white;
+                        margin: 0 10px;
+                    }
+                }
+                &__date {
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                    color: $purple;
+                    &__time {
+                        display: flex;
+                        &::before {
+                            content: "|";
+                            margin: 0 10px;
+                        }
+                    }
+                }
+                &__venu {
+                    font-family: Montserrat-Bold;
+                    text-transform: uppercase;
+                    color: $white;
+                    text-decoration: solid;
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    &::before {
+                        content: "";
+                        color: $red;
+                        background-color: $red;
+                        display: inline-block;
+                        height: 0.65em;
+                        width: 0.65em;
+                        margin-right: .4rem;
+                        border-radius: 50%;
+                      }
+                }
+                &__description {
+                    font-family: Montserrat-Regular;
+                    text-transform: capitalize;
+                    color: $white;
+                    width: 400px;
+                }
+
+            }
+        }
+    }
+}
+
+.block-views-blockmatch-carousel-slider-block-1 {
+    h2 {
+        display: none;
+    }
+}
+
+.slick-dots {
+    width: auto;
+    position: absolute;
+    bottom: 6rem;
+    right: 10%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    list-style: none;
+    text-align: center;
+    li {
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.7);
+        margin: 0px;
+        button {
+            font-size: 0;
+            height: 1px;
+            padding: 2px 5px;
+            &::before {
+                font-size: 1px;
+                top: -8px;
+                content: " ";
+            }
+        }
+    }
+    .slick-active {
+        button {
+            color: $white;
+            border-radius: 10px;
+            background-color: $white;
+        }
+    }
+}
+
+.Slick-Prev,
+.Slick-Next {
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+    cursor: pointer;
+    font-size: 24px; 
+    color: $white; 
+}
+
+.Slick-Prev {
+    position: absolute;
+    bottom: 5rem;
+    right: 7rem;
+    z-index: 3;
+    cursor: pointer;
+    font-size: 24px; 
+    color: $white; 
+}
+
+.Slick-Prev i,
+.Slick-Next i {
+    font-size: inherit;
+}
+.slick-disabled{
+    color: rgba(255, 255, 255, 0.7); 
+}

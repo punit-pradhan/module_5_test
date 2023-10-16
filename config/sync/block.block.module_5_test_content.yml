@@ -1,0 +1,22 @@
+uuid: 7344119c-4fef-4a1c-88b4-1d61c0e0fe29
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - module_5_test
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: module_5_test_content
+theme: module_5_test
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

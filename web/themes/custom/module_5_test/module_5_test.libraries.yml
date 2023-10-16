@@ -2,6 +2,7 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+      //cdn.lineicons.com/4.0/lineicons.css: {type: external}
 
 slider:
   version: VERSION

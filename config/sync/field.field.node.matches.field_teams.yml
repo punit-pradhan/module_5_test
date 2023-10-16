@@ -1,0 +1,29 @@
+uuid: b8334ca5-6ada-4641-afca-4e9d45535c59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teams
+    - node.type.matches
+    - taxonomy.vocabulary.teams
+id: node.matches.field_teams
+field_name: field_teams
+entity_type: node
+bundle: matches
+label: teams
+description: 'team 1 vs team 2'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      teams: teams
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

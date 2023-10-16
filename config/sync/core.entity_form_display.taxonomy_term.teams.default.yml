@@ -1,0 +1,38 @@
+uuid: 3d919b77-5bf3-4d91-ac50-4bc86dcc7173
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.teams.field_code_name
+    - taxonomy.vocabulary.teams
+id: taxonomy_term.teams.default
+targetEntityType: taxonomy_term
+bundle: teams
+mode: default
+content:
+  field_code_name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 3
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

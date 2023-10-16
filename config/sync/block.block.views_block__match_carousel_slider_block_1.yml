@@ -1,0 +1,29 @@
+uuid: ff339cd8-5e5e-4592-a060-2ab15c504c08
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.match_carousel_slider
+  module:
+    - system
+    - views
+  theme:
+    - module_5_test
+id: views_block__match_carousel_slider_block_1
+theme: module_5_test
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:match_carousel_slider-block_1'
+settings:
+  id: 'views_block:match_carousel_slider-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

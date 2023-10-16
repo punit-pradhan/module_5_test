@@ -1,0 +1,19 @@
+uuid: b3e56077-de58-4434-af1b-1cb5d3d347fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_code_name
+    - taxonomy.vocabulary.teams
+id: taxonomy_term.teams.field_code_name
+field_name: field_code_name
+entity_type: taxonomy_term
+bundle: teams
+label: 'code name'
+description: 'code name of a team like IND'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

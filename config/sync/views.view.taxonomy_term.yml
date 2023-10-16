@@ -303,9 +303,26 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      fields: {  }
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
       query:
         type: views_query
         options: {  }
+      defaults:
+        style: false
+        row: false
+        fields: false
       display_extenders: {  }
       path: taxonomy/term/%
     cache_metadata:

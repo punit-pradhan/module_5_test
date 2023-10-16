@@ -5,3 +5,16 @@ $font-size-h3: 30px;
 $font-size-h4: 24px;
 $font-size-h5: 20px;
 $font-size-h6: 18px;
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../../fonts/Montserrat-Medium.ttf);
+  }
+  @font-face {
+    font-family: Montserrat-Bold;
+    src: url(../../fonts/Montserrat-Bold.ttf);
+  }
+  @font-face {
+    font-family: Montserrat-Regular;
+    src: url(../../fonts/Montserrat-Regular.ttf);
+  }

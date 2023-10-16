@@ -1,0 +1,70 @@
+uuid: 2ab355ed-64d9-4099-a22c-9b1f83bba030
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.matches.field_carousel_image
+    - field.field.node.matches.field_date_time
+    - field.field.node.matches.field_description
+    - field.field.node.matches.field_location
+    - field.field.node.matches.field_teams
+    - image.style.wide
+    - node.type.matches
+  module:
+    - datetime
+    - image
+    - user
+id: node.matches.default
+targetEntityType: node
+bundle: matches
+mode: default
+content:
+  field_carousel_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_date_time:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_location:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_teams:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

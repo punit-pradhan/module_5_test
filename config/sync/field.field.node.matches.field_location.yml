@@ -1,0 +1,19 @@
+uuid: 5a5c225b-4933-4fdd-a467-c14e365a9044
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.matches
+id: node.matches.field_location
+field_name: field_location
+entity_type: node
+bundle: matches
+label: Location
+description: 'stadium name'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
