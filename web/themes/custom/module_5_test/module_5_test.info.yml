@@ -5,6 +5,7 @@ core_version_requirement: '^9.4 || ^10'
 'base theme': bootstrap5
 libraries:
   - module_5_test/global-styling
+  - module_5_test/slider
 
 regions:
   header: Header

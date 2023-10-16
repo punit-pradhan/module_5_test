@@ -1,0 +1,24 @@
+// Import styles from "../partials/importers"
+@use "../partials/importers" as *;
+
+// Reset default margin, padding, and box-sizing for all elements
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Enable smooth scrolling for HTML elements
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    background-color: $Accent_color !important;
+    border: var(--bs-btn-border-width) solid $Accent_color !important;
+}
+
+.bg-dark,
+.bg-secondary {
+    background-color: $bg-accent-color !important;
+}
